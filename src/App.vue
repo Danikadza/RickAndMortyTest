@@ -7,5 +7,4 @@ import CharacterList from './components/CharacterList.vue'
 </template>
 
 <style scoped>
-
 </style>
