@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build-only",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "build-only": "vite build",

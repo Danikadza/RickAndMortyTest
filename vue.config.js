@@ -1,6 +1,8 @@
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
-    publicPath: `/RickAndMortyTest/`,
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/RickAndMortyTest/'
+    : '/',
     transpileDependencies: true
 })
